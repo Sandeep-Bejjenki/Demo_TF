@@ -1,0 +1,37 @@
+https://www.youtube.com/watch?v=xuB1Id2Wxak
+Adding to Main // Exporting local Repository:
+1) git init
+2) git remote add origin "https://github.com/Sandeep-Bejjenki/Demo_TF.git"
+3) git status
+4) git add production.tf---->this add 1 file
+5) git add -A -----> adds multiple files with modified previous file
+6) git commit -a -m "Commit all the files"
+7) git log ------> knows no.of commits done with author
+8) git branch -M main
+9) git push -u origin main
+10) If u make changes in file to reflect in remote repository again call function "9"
+
+Adding Branch & working on local repository:
+11)git branch dev1---to make branch
+12) git checkout dev1
+13) git add variables.tf
+14) git commit -m "Added TF variable file"
+15) git push -u origin dev1
+
+Merging Branches:
+16) git merge dev1
+
+17) git reset --hard HEAD~1 ----> is used to delete commit1 & no files be in staging area
+18) git reset --soft HEAD~1 ----> is used to delete commit1 but files will be in staging area
+
+19) git checkout commitid file.txt ----> will revert back to previous file state.
+
+===========================================================
+
+1) git init
+2) git commit -m "Intial version-sample vm .tf code"
+3) git remote add origin git@github.com/USERNAME/repository_name.git
+4)git remote remove origin
+5) git push -u origin main & git push --set-upstream origin master
+6) git remote set-url origin https://github.com/Sandeep-Bejjenki/Demo_TF.git
+7) git config -l
