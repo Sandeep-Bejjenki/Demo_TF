@@ -30,5 +30,6 @@ module "productionvm" {
     Createdby = "Bejjenki"
     Env = "Production"
     Dept = "HR"
+    Location = "IND"
 }
 }
